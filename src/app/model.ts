@@ -5,10 +5,11 @@ export class Model {
   constructor() {
     this.user = 'seyaz';
     this.items = [
-      new ToDoItem("Spor","True"),
-      new ToDoItem("Kumar","False"),
-      new ToDoItem("Yürüyüş","True"),
-      new ToDoItem("Kitap Okumak","False"),
+      new ToDoItem("Spor",true),
+      new ToDoItem("Kumar",false),
+      new ToDoItem("Yürüyüş",true),
+      new ToDoItem("Kitap Okumak",false),
+      new ToDoItem("Boks Yapmak",false),
     ];
   }
 }
