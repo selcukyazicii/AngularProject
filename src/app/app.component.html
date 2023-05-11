@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
       <div class="col-5">
         <h3 class="bg-primary text-white">
-          Your todo lists
+          {{getName()}}'s todo lists
         </h3>
         <div class="input-group">
           <input type="text"class="form-control">
@@ -18,17 +18,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Spor Yap</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Ekmek Al</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Kırık Kanatlarla Uç</td>
-              <td>No</td>
+            <tr *ngFor="let item of getItem()">
+              <td>{{item.description}}</td>
+              <td>{{item.action}}</td>
             </tr>
           </tbody>
         </table>
